@@ -1,6 +1,21 @@
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
+        <script
+  src="https://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
+        <script>
+            $.get({
+                url: '/data',
+            })
+            .done(function(res) {
+                console.log(res);
+            })
+            .fail(function(err) {
+                console.log('Error: ' + err.status);
+            });
+        </script>
     </head>
     <body>
         <p>index</p>
