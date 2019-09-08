@@ -1,12 +1,5 @@
 
 
-.ui_button img{
-  width: 10%; /* or any custom size */
-  height: 10%;
-  margin:0 30px 0 30px;
-  height: 6vmin;
-  opacity: 0.3;
-}
 
 section {
   position: fixed;
@@ -17,23 +10,59 @@ section {
   text-align: left;
 }
 
+/* Border around the body tag */
+#top, #bottom, #left, #right {
+    background:transparent;
+    position: fixed;
+    transition: background-color 0.4s;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 20px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
 
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 20px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+
+
+
+footer{
+    position : fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-bottom: 30px;
+    cursor: pointer;
 }
 
-footer img {
-  margin: 0 10px 0 10px;
-  cursor: pointer;
-  width: 5%;
-  height: 5%;
+footer img{
+  width: 2%; /* or any custom size */
+  height: 2%;
+  margin:0 30px 0 30px;
+  opacity: 0.8;
+}
+
+
+.next:hover{
+    opacity: 1;
+}
+
+.prev:hover{
+    opacity: 1;
+}
+
+.random:hover{
+    opacity: 1;
 }
 
 
