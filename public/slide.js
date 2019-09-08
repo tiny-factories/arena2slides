@@ -60,6 +60,7 @@ fetch("/data/" + channel)
        for (var i = 0 ; i < arenaJSON.length ; i++){
             arenaTitle.unshift(arenaJSON[i].title);
             arenaDescription.unshift(arenaJSON[i].description);
+
             arenaUrl.unshift(arenaJSON[i].source.url);
             arenaImg.unshift(arenaJSON[i].image.display.url);
         }
