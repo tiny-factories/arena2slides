@@ -85,6 +85,6 @@ footer img{
     display: none;
 }
 
-a:hover + .additional-info {
+img:hover + .additional-info  {
     display: block;
 }
