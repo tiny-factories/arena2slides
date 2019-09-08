@@ -6,10 +6,18 @@ fetch("/exampleSlides")
     return response.json();
 })
 .then(function(data){
-    exampleOne = document.getElementById("exampleOne")
-    exampleOneH3 = exampleOne.querySelector("h3")
-    exampleTwo = document.getElementById("exampleTwo")
-    exampleThree = document.getElementById("exampleThree")
+    let examples = ["exampleOne","exampleTwo","exampleThree"]
+
+    console.log(data);
+    for (let i in examples){
+        let example = document.getElementById(examples[i])
+        let exampleH3 = example.querySelector("h3")
+        let exampleA1 = example.getElementsByClassName("firstLink")
+        let exampleA2 = example.getElementsByClassName("secondLink")
+
+        exampleH3.innerHTML = data[i].contents.title
+        
+    }
 
 
 })

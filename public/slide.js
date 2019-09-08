@@ -52,7 +52,7 @@ fetch("/data/" + channel)
     })
     .then(function(data){
 
-        arenaJSON = data.contents;
+        arenaJSON = data.channelContents.contents;
         console.log(arenaJSON);
 
         console.log("Length is : " + arenaJSON.length);

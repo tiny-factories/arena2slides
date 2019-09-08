@@ -23,8 +23,16 @@ app.get('/slide/:id',function(req,res) {
 // Get data for a channel in arena
 const getData = (id) => {
     try {
-        console.log(typeof axios.get('https://api.are.na/v2/channels/' + id + '/contents'));
         return axios.get('https://api.are.na/v2/channels/' + id + '/contents');
+    } catch (error) {
+        console.error(error);
+        return error
+    }
+}
+
+const getChannelData = (id) => {
+    try {
+        return axios.get("https://api.are.na/v2/channels/" + id);
     } catch (error) {
         console.error(error);
         return error
@@ -36,6 +44,7 @@ const getSavedData = (id) => {
     let rawData = fs.readFileSync('data/' + id + '.json');
     let jsonData = JSON.parse(rawData);
     console.log(typeof jsonData)
+    console.log(jsonData)
     return jsonData
 }
 
@@ -48,11 +57,26 @@ app.get('/data/:id', function(req,res) {
         if (items.includes(id + ".json")){
             res.send(getSavedData(id))
         } else {
+            // Get contents of a channel
             getData(id)
             .then(response => {
-                let data = JSON.stringify(response.data)
-                fs.writeFileSync('data/' + id + '.json', data);
-                res.send(data)
+                let data = response.data
+                // Get general data about a channel
+                getChannelData(id)
+                .then(response2 => {
+                    let channelData = response2.data
+                    // Combine them and save
+                    let combinedData = {
+                        "channelDetails": channelData,
+                        "channelContents": data
+                    }
+                    fs.writeFileSync('data/' + id + '.json', JSON.stringify(combinedData));
+                    res.send(data)
+                })
+                .catch(error => {
+                    res.send(error)
+                })
+
             })
             .catch(error => {
                 res.send(error)
@@ -81,7 +105,8 @@ app.get('/exampleSlides', function(req,res) {
         for (let i in selections){
             let rawData = fs.readFileSync('data/' + items[i]);
             let jsonData = JSON.parse(rawData);
-            data.push(jsonData)
+            console.log(Object.keys(jsonData))
+            data.push(jsonData.channelDetails)
         }
         res.send(data)
     });
