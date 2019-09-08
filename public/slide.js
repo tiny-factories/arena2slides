@@ -7,10 +7,10 @@ let channel = url.split("/")[4]
 
 //Stores all the arena JSON data
 let arenaJSON = [];
-    let arenaTitle  = []; //Title
-    let arenaDescription = [];  //Description
-    let arenaImg  = [];   //Url of image - display size
-    let arenaUrl  = [];  //Source URL
+let arenaTitle  = []; //Title
+let arenaDescription = [];  //Description
+let arenaImg  = [];   //Url of image - display size
+let arenaUrl  = [];  //Source URL
 
 let slideNumber = 0;
 
