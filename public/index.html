@@ -5,109 +5,128 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:description" content="rtyrtyrty" />
+    <meta property="og:description" content="Create a slide show from any arena collection" />
     <meta property="og:determiner" content="the" />
-    <meta property="og:locale" content="en_GB" />
-    <meta property="og:locale:alternate" content="fr_FR" />
-    <meta property="og:locale:alternate" content="es_ES" />
-    <meta property="og:site_name" content="IMDb" />
+    <meta property="og:site_name" content="arena2slides" />
 
-    
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/raster.css">
 
-
-    
     <!-- import the webpage's javascript file -->
     <script src="/index.js" defer></script>
-  </head>  
+  </head>
   <body>
   <header>
-  
+
   </header>
     <section class="hero">
     <grid columns=3>
-      <c span=row>    
+      <c span=row>
         <h1>arena 2 slides</h1>
         <br/>
       </c>
-      
-      <c span=row>
+      <!-- Steps pn how to use -->
+      <c>
+        <h1>① Copy a channel URL from <a href="https://www.are.na/tiny-factories/arena2slide">are.na</a></h1>
+      </c>
+      <c>
+        <h1>② Paste the url in the field </h1>
+
+      </c>
+      <c>
+        <h1>③ Preview you presentation</h1>
+
+      </c>
+
+      <c span=row span-s=row>
        <input id="arenaurl" type="text" name="arenaurl">
         <button id="submit" type="button">Click Me!</button>
         <br/>
       </c>
-      
+
     </grid>
     </section>
-      
-    
-    
+
+
+
     <section class="exampleSection">
       <grid columns=6>
 
-        <c id="exampleOne" class="eachExample" span=1-2 span-s=row> 
+        <c id="exampleOne" class="eachExample" span=1-2 span-s=row>
           <h3>
-            example project
+            Loading Example 1
           </h3>
           <grid columns=2>
-            <c class="eachExample" span=3-4 span-s=row>
+            <c class="eachExample" span-s=row>
               <div class="buttonWide">
                 <a class="button firstLink">Click Me!</a>
               </div>
             </c>
-            <c >
+
+            <c class="eachExample" span-s=row>
             <div class="buttonWide">
                 <a class="button secondLink">Click Me!</a>
-              </div>  
+              </div>
             </c>
-          </grid>
+            </grid>
         </c>
 
-        <c id="exampleTwo" class="eachExample" span=1-2 span-s=row> 
+        <c id="exampleTwo" class="eachExample" span=3-4>
             <h3>
-              example project
+              Loading Project 2
             </h3>
             <grid columns=2>
-                <c class="eachExample" span=3-4 span-s=row>
-                    <div class="buttonWide">
-                        <a class="button firstLink">Click Me!</a>
-                    </div>
-                  </c>
-                  <c >
-                  <div class="buttonWide">
-                      <a class="button secondLink">Click Me!</a>
-                    </div>  
-                  </c>
-          </grid>
-        </c>
-
-        <c id="exampleThree" class="eachExample" span=1-2 span-s=row> 
-            <h3>
-              example project
-            </h3>
-            <grid columns=2>
-              <c class="eachExample" span=3-4 span-s=row>
+              <c class="eachExample" span-s=row>
                 <div class="buttonWide">
-                    <a class="button firstLink">Click Me!</a>
+                  <a class="button firstLink">Click Me!</a>
                 </div>
               </c>
-              <c >
+
+              <c class="eachExample" span-s=row>
               <div class="buttonWide">
                   <a class="button secondLink">Click Me!</a>
-                </div>  
+                </div>
               </c>
-          </grid>
+              </grid>
+        </c>
+
+        <c id="exampleThree" class="eachExample" span=5-6 span-s=row>
+            <h3>
+              Loading Example 3
+            </h3>
+            <grid columns=2>
+              <c class="eachExample" span-s=row>
+                <div class="buttonWide">
+                  <a class="button firstLink">Click Me!</a>
+                </div>
+              </c>
+
+              <c class="eachExample" span-s=row>
+              <div class="buttonWide">
+                  <a class="button secondLink">Click Me!</a>
+                </div>
+              </c>
+              </grid>
         </c>
       </grid>
     </section>
-    
-  
+
+
    <footer>
-   
+     <grid columns=3>
+      <c>
+        <p>Its </p>
+      </c>
+      <c>
+        <p>Its </p>
+
+      </c>
+      <c>
+        <p>Its </p>
+      </c>
+     </grid>
+
   </footer>
   </body>
 </html>
-
-

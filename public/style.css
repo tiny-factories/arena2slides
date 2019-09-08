@@ -4,10 +4,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   padding: 0vh 0vw 0vh 0vw !important;
   margin: 0px !important;
-  
+
 }
 
-h1 {
+ {
   font-style: italic;
   color: #373fff;
 }
@@ -22,16 +22,16 @@ img {
 
 .ui_button img{
   width: 10%; /* or any custom size */
-  height: 10%; 
+  height: 10%;
   margin:0 30px 0 30px;
-  height: 6vmin;  
-  opacity: 0.3; 
+  height: 6vmin;
+  opacity: 0.3;
 }
 
 
 .exampleSection {
   padding: 30vh 0 0 0;
-  
+
 
 }
 
@@ -45,7 +45,7 @@ img {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  
+
 }
 
 
@@ -62,8 +62,8 @@ img {
 
 
 
-.slides { 
-  
+.slides {
+
 /*   margin: 5vh 5vh; */
   align: center;
   text-align: center;
@@ -74,11 +74,11 @@ img {
   transform: translate(-50%, -60%);
   width: 90vwv;
   text-align: center;
-  
+
 
 }
-.slidesContent { 
-  
+.slidesContent {
+
   margin: 5vh 5vh;
   align: center;
   text-align: center;
@@ -89,7 +89,7 @@ img {
   transform: translate(-50%, -60%);
   width: 90vwv;
   text-align: center;
-  
+
 
 }
 
@@ -100,11 +100,11 @@ img {
 
 
 header{
-  
+
 }
 
 footer{
-  
+
 }
 
 
@@ -123,7 +123,7 @@ footer{
     height: 5%;
 }
 
-.additional-info { 
+.additional-info {
     display: none;
 }
 
