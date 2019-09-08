@@ -23,8 +23,8 @@ const titleTag = document.getElementById("mainTitle");
 const descriptionTag = document.getElementById("mainDescription");
 const imageTag = document.getElementById("mainImage");
 const linkTag = document.getElementById("mainLink");
+const pagenumTag = document.getElementById("pagenum");
 
-const pagenumTag = document.querySelector("div.pagenum");
 const nextTag = document.querySelector("img.next");
 const prevTag = document.querySelector("img.prev");
 const randomTag = document.querySelector("img.random");
