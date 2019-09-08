@@ -27,7 +27,14 @@ app.get('/text/',function(req,res){
 });
 
 
-const getURLData = (id) => {
+const getData = (id) => {
+    fs.readdir("/data/", function(err, items) {
+        console.log(items);
+    
+        for (var i=0; i<items.length; i++) {
+            console.log(items[i]);
+        }
+    });
     try {
         return axios.get('https://api.are.na/v2/channels/' + id + '/contents');
     } catch (error) {
@@ -37,7 +44,7 @@ const getURLData = (id) => {
 
 app.get('/data/:id', function(req,res) {
     let id = req.param("id");
-    getURLData(id)
+    getData(id)
     .then(response => {
         let data = JSON.stringify(response.data)
         fs.writeFileSync('data/' + id + '.json', data);
