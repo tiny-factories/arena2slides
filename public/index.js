@@ -16,7 +16,9 @@ fetch("/exampleSlides")
         let exampleA2 = example.getElementsByClassName("secondLink")
 
         exampleH3.innerHTML = data[i].title
-        exampleA1.src = "https://www.are.na/" + data[i].user.slug + "/" + data[i].slug
+        console.log(exampleA1[0])
+        exampleA1[0].src = "https://www.are.na/" + data[i].user.slug + "/" + data[i].slug
+        exampleA2[0].src = "/slide/" + data[i].slug
     }
 
 
