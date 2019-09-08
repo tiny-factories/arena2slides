@@ -17,8 +17,8 @@ fetch("/exampleSlides")
 
         exampleH3.innerHTML = data[i].title
         console.log(exampleA1[0])
-        exampleA1[0].src = "https://www.are.na/" + data[i].user.slug + "/" + data[i].slug
-        exampleA2[0].src = "/slide/" + data[i].slug
+        exampleA1[0].href = "https://www.are.na/" + data[i].user.slug + "/" + data[i].slug
+        exampleA2[0].href = "/slide/" + data[i].slug
     }
 
 
