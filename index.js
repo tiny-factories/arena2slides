@@ -6,14 +6,20 @@ const fs = require('fs');
 
 const port = 3000
 
-let rawdata = fs.readFileSync('data/test.json');
-let student = JSON.parse(rawdata);
-console.log(student)
+// let rawdata = fs.readFileSync('data/test.json');
+// let student = JSON.parse(rawdata);
+// console.log(student)
 
 app.use(express.static('public'));
 
 app.get('/',function(req,res) {
-    res.sendFile(path.join(__dirname+'/public/home.html'));
+    res.sendFile(path.join(__dirname+'/public/index.html'));
+});
+
+app.get('/slide/:id',function(req,res) {
+    let id = req.param("id");
+    console.log(id)
+    res.sendFile(path.join(__dirname+'/public/slide.html'));
 });
 
 app.get('/text/',function(req,res){
