@@ -107,8 +107,7 @@ app.get('/exampleSlides', function(req,res) {
             console.log(i)
             let rawData = fs.readFileSync('data/' + items[selections[i]]);
             let jsonData = JSON.parse(rawData);
-            console.log(Object.keys(jsonData))
-            data.push(jsonData.channelDetails)
+            data.push(jsonData)
         }
         res.send(data)
     });

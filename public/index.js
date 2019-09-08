@@ -1,27 +1,40 @@
 /* If you're feeling fancy you can add interactivity 
     to your site with Javascript */
 
+// use thumbnail
+function createGIFs(content, element, index){
+    let image = element.querySelector("img");
+    if (content[index].image != undefined){
+        image.src = content[index].image.thumb.url
+    } else{
+        image.src = "/assets/white.jpg"
+    }
+    console.log(content[index].image.thumb.url)
+}
+
 fetch("/exampleSlides")
 .then(function(response){
     return response.json();
 })
-.then(function(data){
+.then(function(d){
     let examples = ["exampleOne","exampleTwo","exampleThree"]
 
-    console.log(data);
     for (let i in examples){
         let example = document.getElementById(examples[i])
         let exampleH3 = example.querySelector("h3")
         let exampleA1 = example.getElementsByClassName("firstLink")
         let exampleA2 = example.getElementsByClassName("secondLink")
 
-        exampleH3.innerHTML = data[i].title
+        let data = d[i].channelDetails
+        exampleH3.innerHTML = data.title
         console.log(exampleA1[0])
-        exampleA1[0].href = "https://www.are.na/" + data[i].user.slug + "/" + data[i].slug
-        exampleA2[0].href = "/slide/" + data[i].slug
+        exampleA1[0].href = "https://www.are.na/" + data.user.slug + "/" + data.slug
+        exampleA2[0].href = "/slide/" + data.slug
+
+        let contents = d[i].channelContents.contents;
+
+        createGIFs(contents, example, 0);
     }
-
-
 })
 .catch(function(err){
     console.log(err)
