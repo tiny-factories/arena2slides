@@ -9,7 +9,9 @@ function createGIFs(content, element, index){
     } else{
         image.src = "/assets/white.jpg"
     }
-    console.log(content[index].image.thumb.url)
+    // let num = Math.floor(Math.random() * (content.length - 1)) + 0
+    // console.log(num)
+    // setTimeout(createGIFs(content, element, index+1), 1000);
 }
 
 fetch("/exampleSlides")
@@ -32,8 +34,8 @@ fetch("/exampleSlides")
         exampleA2[0].href = "/slide/" + data.slug
 
         let contents = d[i].channelContents.contents;
-
-        createGIFs(contents, example, 0);
+        
+        setTimeout(createGIFs(contents, example, 0), 1000);
     }
 })
 .catch(function(err){
@@ -52,8 +54,3 @@ document.getElementById("submit").addEventListener("click", function(){
     console.log(urlParts)
     window.location = '/slide/' + urlParts[4];
 });
-
-
-  
-
-// Change color of example squares
