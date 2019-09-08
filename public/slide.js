@@ -60,9 +60,18 @@ fetch("/data/" + channel)
        for (var i = 0 ; i < arenaJSON.length ; i++){
             arenaTitle.unshift(arenaJSON[i].title);
             arenaDescription.unshift(arenaJSON[i].description);
-
-            arenaUrl.unshift(arenaJSON[i].source.url);
-            arenaImg.unshift(arenaJSON[i].image.display.url);
+            if (arenaJSON[i].source != null){
+                arenaUrl.unshift(arenaJSON[i].source.url);
+            } else {
+                arenaUrl.unshift("https://www.are.na/");
+            }
+            if (arenaJSON[i].image != null){
+                arenaImg.unshift(arenaJSON[i].image.display.url);
+            } else {
+                arenaUrl.unshift("https://cdn.pixabay.com/photo/2018/04/20/17/18/cat-3336579__340.jpg");
+            }
+            
+            
         }
 
         console.log(arenaImg[0]);
