@@ -9,14 +9,8 @@ document.getElementById("submit").addEventListener("click", function(){
     // Ex Channel Title: https://api.are.na/v2/channels/arena-influences/contents
     // Get the channel title
     let urlParts = url.split("/")
-    // for (let i in urlParts){
-    //     console.log(i)
-    //     if (urlParts[i] == "channels"){
-            
-    //     }
-    // }
-    window.location = '/slide/' + urlParts[5];
-    
+    console.log(urlParts)
+    window.location = '/slide/' + urlParts[4];
 });
 
 
