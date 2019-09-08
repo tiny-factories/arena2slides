@@ -2,17 +2,36 @@
     to your site with Javascript */
 
 // use thumbnail
-function createGIFs(content, element, index){
+function createGIF (content, element, index){
     let image = element.querySelector("img");
     if (content[index].image != undefined){
         image.src = content[index].image.thumb.url
     } else{
         image.src = "/assets/white.jpg"
     }
-    // let num = Math.floor(Math.random() * (content.length - 1)) + 0
-    // console.log(num)
-    // setTimeout(createGIFs(content, element, index+1), 1000);
+
+    // NOTE: Alternative code. Attempting to use timeouts
+    // to loop through and modify image shown.
+
+    // let currIndex = index;
+    // function updateImage(){
+    //     let image = element.querySelector("img");
+    //     if (content[currIndex].image != undefined){
+    //         image.src = content[currIndex].image.thumb.url
+    //     } else{
+    //         image.src = "/assets/white.jpg"
+    //     }
+    //     console.log(currIndex)
+    //     if (currIndex == content.length){
+    //         currIndex = 0
+    //     } else {
+    //         currIndex += 1;
+    //     }
+    //     setTimeout(updateImage(), 1000);
+    // }
+    // setTimeout(updateImage(), 1000);
 }
+
 
 fetch("/exampleSlides")
 .then(function(response){
@@ -35,7 +54,7 @@ fetch("/exampleSlides")
 
         let contents = d[i].channelContents.contents;
         
-        setTimeout(createGIFs(contents, example, 0), 1000);
+        createGIF(contents, example, 0)
     }
 })
 .catch(function(err){
