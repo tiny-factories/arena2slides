@@ -5,7 +5,7 @@ const path = require('path');
 const axios = require('axios')
 const fs = require('fs');
 
-const port = 3000
+const PORT = process.env.PORT || 3000;
 
 // Tells node.js to use static front end assets
 app.use(express.static('public'));
@@ -114,4 +114,4 @@ app.get('/exampleSlides', function(req,res) {
     });
 })
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(PORT, () => console.log(`Example app listening on port ${PORT}!`))
