@@ -16,32 +16,27 @@
     <!-- import the webpage's javascript file -->
     <script src="/index.js" defer></script>
   </head>
-  <body>
+  <body class="homePage">
   <header>
 
   </header>
     <section class="hero">
-    <grid columns=3>
+    <grid columns=6>
       <c span=row>
         <h1>arena 2 slides</h1>
         <br/>
       </c>
       <!-- Steps pn how to use -->
-      <c>
-        <h1>① Copy a channel URL from <a href="https://www.are.na/tiny-factories/arena2slide">are.na</a></h1>
+      <c span=1-3 class="">
+        <h2>① Copy a channel URL from <a href="https://www.are.na/tiny-factories/arena2slide">are.na</a></h2>
       </c>
-      <c>
-        <h1>② Paste the url in the field </h1>
-
-      </c>
-      <c>
-        <h1>③ Preview you presentation</h1>
-
+      <c span=4-6 class="">
+        <h2>② Paste url to preview show</h2>
       </c>
 
-      <c span=row span-s=row>
+      <c span=row span-s=row class="searchSection">
        <input id="arenaurl" type="text" name="arenaurl">
-        <button id="submit" type="button">Click Me!</button>
+        <button id="submit" type="button">Make Show</button>
         <br/>
       </c>
 
@@ -61,13 +56,13 @@
           <grid columns=2>
             <c class="eachExample" span-s=row>
               <div class="buttonWide">
-                <a target="_blank" class="button firstLink">Source</a>
+                <a class="button firstLink">Source</a>
               </div>
             </c>
 
             <c class="eachExample" span-s=row>
             <div class="buttonWide">
-                <a target="_blank" class="button secondLink">Presentation</a>
+                <a class="button secondLink">Presentation</a>
               </div>
             </c>
             </grid>
@@ -81,13 +76,13 @@
             <grid columns=2>
               <c class="eachExample" span-s=row>
                 <div class="buttonWide">
-                  <a target="_blank"class="button firstLink">Click Me!</a>
+                  <a class="button firstLink">Click Me!</a>
                 </div>
               </c>
 
               <c class="eachExample" span-s=row>
               <div class="buttonWide">
-                  <a target="_blank" class="button secondLink">Click Me!</a>
+                  <a class="button secondLink">Click Me!</a>
                 </div>
               </c>
               </grid>
@@ -101,13 +96,13 @@
             <grid columns=2>
               <c class="eachExample" span-s=row>
                 <div class="buttonWide">
-                  <a target="_blank" class="button firstLink">Click Me!</a>
+                  <a class="button firstLink">Click Me!</a>
                 </div>
               </c>
 
               <c class="eachExample" span-s=row>
               <div class="buttonWide">
-                  <a target="_blank" class="button secondLink">Click Me!</a>
+                  <a class="button secondLink">Click Me!</a>
                 </div>
               </c>
               </grid>
@@ -119,14 +114,15 @@
    <footer>
      <grid columns=3>
       <c>
-        <p>Its </p>
+        <p>Other link</p>
       </c>
       <c>
-        <p>Its </p>
+        <p><a>are.na</a></p>
 
       </c>
       <c>
-        <p>Its </p>
+        <p><a href="https://tinyfactories.space">
+          🏭 tiny factories</a></p>
       </c>
      </grid>
 

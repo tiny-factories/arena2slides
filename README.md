@@ -17,7 +17,7 @@ That's this file, where you can tell people what your cool website does and how 
 
 ### ← index.html
 
-Where you'll write the content of your website. 
+Where you'll write the content of your website.
 
 ### ← style.css
 
@@ -45,10 +45,10 @@ TODO Features:
 - Hover meta data info on the slide
 - Create a new perminent url when a new arena collection is imported (Percictent urls) and collections of content generoated
 - List a few examples of content made with the tool on the home page
-- Create a chrome extention to make this for faster importing 
+- Create a chrome extention to make this for faster importing
 - If no text scale image into 80% of the width
-- 
+- Abuility to search the entire group of content in arena and whats already be querried 
 
 
-Refferences 
+Refferences
 https://rsms.me/raster/

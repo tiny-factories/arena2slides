@@ -27,6 +27,11 @@ const nextTag = document.querySelector("img.next");
 const prevTag = document.querySelector("img.prev");
 const randomTag = document.querySelector("img.random");
 
+const leftTag = document.querySelector('#left');
+const rightTag = document.querySelector('#right');
+const topTag = document.querySelector('#top');
+const bottomTag = document.querySelector('#bottom');
+
 
 nextTag.addEventListener("click",function(){
     next();
@@ -96,6 +101,17 @@ const updateSection= () => {
     linkTag.href= arenaUrl[slideNumber] ;
 
 
+    //--------- Randomizing border color -------//
+    color_random = Math.random()*360;
+
+     border_color = `hsl(${color_random},50%,60%)`;
+
+     leftTag.style.backgroundColor = border_color;
+     rightTag.style.backgroundColor = border_color;
+     topTag.style.backgroundColor = border_color;
+     bottomTag.style.backgroundColor = border_color;
+
+
     //Change the size of the text depending on the length of the text
 
     /*
@@ -163,5 +179,3 @@ if(keyis.key == "ArrowLeft"){
 }
 
 })
-
-
