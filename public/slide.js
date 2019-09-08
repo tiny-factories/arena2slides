@@ -1,8 +1,6 @@
 let url = window.location.href;
 let channel = url.split("/")[4]
 
-//---copied--
-
 
 //Getting the arena JSON data into front end————————————————————————
 
@@ -48,43 +46,44 @@ randomTag.addEventListener("click",function(){
 });
 
 
-// Getting JSON Data----
+// Getting JSON Data----------
 
 
 fetch("/data/" + channel)
     .then(function(response){
-            return response.json();
+        console.log("Getting response from are.na JSON...");
+        return response.json();
     })
     .then(function(data){
 
         arenaJSON = data.channelContents.contents;
         console.log(arenaJSON);
 
-        console.log("Length is : " + arenaJSON.length);
+        console.log("Length of JSON file is : " + arenaJSON.length);
 
        for (var i = 0 ; i < arenaJSON.length ; i++){
             arenaTitle.unshift(arenaJSON[i].title);
             arenaDescription.unshift(arenaJSON[i].description);
+
+            //If there is no source.url section...
             if (arenaJSON[i].source != null){
                 arenaUrl.unshift(arenaJSON[i].source.url);
             } else {
                 arenaUrl.unshift("https://www.are.na/");
             }
+
+            //If there is no image section...
             if (arenaJSON[i].image != null){
                 arenaImg.unshift(arenaJSON[i].image.display.url);
             } else {
                 arenaUrl.unshift("https://cdn.pixabay.com/photo/2018/04/20/17/18/cat-3336579__340.jpg");
             }
-
-
         }
-
-        console.log(arenaImg[0]);
-        console.log("Everything is now loaded...!")
-        console.log("Length of Arena Docs" + arenaJSON.length)
+        console.log("JSON file is now loaded in array and ready!")
 
         //Trigger for update
         updateSection();
+        console.log("Triggering updateSection()")
 
     }).catch(function(){
         console.log("Can't load the Arena Json file!");
@@ -94,12 +93,10 @@ fetch("/data/" + channel)
 //Make sure to update everything here.
 const updateSection= () => {
 
+    //Updating the innerHTML elements
     pagenumTag.innerHTML = slideNumber + "/" + (arenaJSON.length - 1);
-
     titleTag.innerHTML = arenaTitle[slideNumber];
     descriptionTag.innerHTML =  arenaDescription[slideNumber];
-
-    //imageTag.setAttribute("src", arenaImg[slideNumber]);
     imageTag.src = arenaImg[slideNumber] ;
     linkTag.href= arenaUrl[slideNumber] ;
 
