@@ -13,13 +13,22 @@ h1 {
 }
 
 img {
-    width: 100%; /* or any custom size */
-    height: 100%; 
-    object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
   text-align:center;
  display:block;
 }
-e
+
+.ui_button img{
+  width: 10%; /* or any custom size */
+  height: 10%; 
+  margin:0 30px 0 30px;
+  height: 6vmin;  
+  opacity: 0.3; 
+}
+
+
 .exampleSection {
   padding: 30vh 0 0 0;
   
