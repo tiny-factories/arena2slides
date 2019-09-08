@@ -1,0 +1,61 @@
+
+
+.ui_button img{
+  width: 10%; /* or any custom size */
+  height: 10%;
+  margin:0 30px 0 30px;
+  height: 6vmin;
+  opacity: 0.3;
+}
+
+section {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  text-align: left;
+}
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer img {
+  margin: 0 10px 0 10px;
+  cursor: pointer;
+  width: 5%;
+  height: 5%;
+}
+
+
+/* information icon on the bottom right corner */
+#info-icon {
+    position: relative;
+    margin: 15vh 15vh;
+}
+
+#info-icon img {
+    z-index: 1;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 5%;
+    height: 5%;
+}
+
+.additional-info {
+    display: none;
+}
+
+a:hover + .additional-info {
+    display: block;
+}
