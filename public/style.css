@@ -4,7 +4,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   padding: 0vh 0vw 0vh 0vw !important;
   margin: 0px !important;
-
+  background-color: #fae123;
 }
 
  {
@@ -40,7 +40,8 @@ img {
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
-  padding: 15px 32px;
+  /* padding: 15px 32px; */
+  width: 100%;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -50,14 +51,14 @@ img {
 
 
 .eachExample{
-  background-color:#555;
+  background-color:#555
+  padding:15vh 0 15vh 0;
 }
 
 .hero{
   padding: 10vh 0 10vh 0;
   align: center;
   text-align: center;
-  background-color: #3E64FF;
 }
 
 
@@ -97,6 +98,9 @@ img {
 /* .slides img{
   vertical-align: middle;
 } */
+#id{
+  width:80vw;
+}
 
 
 header{
@@ -104,7 +108,10 @@ header{
 }
 
 footer{
-
+  position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
 }
 
 
