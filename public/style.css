@@ -4,9 +4,12 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   padding: 0vh 0vw 0vh 0vw !important;
   margin: 0px !important;
-  background-color: #fae123;
-}
 
+}
+.homePage{
+  background-color: #fae123;
+  height:100vh;
+}
  {
   font-style: italic;
   color: #373fff;
@@ -22,7 +25,7 @@ img {
 
 
 .exampleSection {
-  padding: 30vh 0 0 0;
+  /* padding: 30vh 0 0 0; */
 
 
 }
@@ -34,17 +37,58 @@ img {
   color: white;
   /* padding: 15px 32px; */
   width: 100%;
+  height: 50px;
   text-align: center;
   text-decoration: none;
+  vertical-align:middle
   display: inline-block;
   font-size: 16px;
+
+}
+.buttonWide{
+  box-sizing: border-box;
+display: flex;
+-webkit-box-align: center;
+align-items: center;
+-webkit-box-pack: center;
+justify-content: center;
+flex-direction: column;
+width: 100%;
+height: 100%;
+border-top-width: 2px;
+border-right-width: 2px;
+border-bottom-width: 2px;
+border-left-width: 2px;
+
 
 }
 
 
 .eachExample{
-  background-color:#555
-  padding:15vh 0 15vh 0;
+  box-sizing: border-box;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+
+  border-top-color: transparent;
+  height: 100%;
+  width: 100%;
+
+
+
+}
+
+.eachExample h3{
+  padding-left: 5px;
+}
+
+.eachExample p{
+  padding-left: 5px;
 }
 
 .hero{
@@ -54,6 +98,24 @@ img {
 }
 
 
+<<<<<<< Updated upstream
+=======
+
+.slides {
+/*   margin: 5vh 5vh; */
+  align: center;
+  text-align: center;
+  display:block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  width: 90vwv;
+  text-align: center;
+}
+
+
+>>>>>>> Stashed changes
 /* .slides img{
   vertical-align: middle;
 } */
@@ -65,3 +127,61 @@ img {
 header{
 
 }
+<<<<<<< Updated upstream
+=======
+
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:5vh 0 5vh 0;
+}
+
+footer img {
+  margin: 0 10px 0 10px;
+  cursor: pointer;
+}
+
+
+/* information icon on the bottom right corner */
+#info-icon {
+    position: relative;
+    margin: 15vh 15vh;
+}
+
+#info-icon img {
+    z-index: 1;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 5%;
+    height: 5%;
+}
+
+.additional-info {
+    display: none;
+}
+
+a:hover + .additional-info {
+    display: block;
+}
+
+#arenaurl{
+  width: 60vw;
+  height: 5vh;
+  border-radius: 1rem;
+}
+#submit{
+  height: 5vh;
+}
+
+.searchSection{
+
+  padding: 10vh 0 10vh 0;
+
+}
+>>>>>>> Stashed changes
