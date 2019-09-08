@@ -60,4 +60,10 @@ app.get('/data/:id', function(req,res) {
     });
 });
 
+app.get('/exampleSlides', function(req,res) {
+    fs.readdir("data/", function(err, items) {
+        console.log(items)
+    });
+})
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
