@@ -71,7 +71,7 @@ app.get('/data/:id', function(req,res) {
                         "channelContents": data
                     }
                     fs.writeFileSync('data/' + id + '.json', JSON.stringify(combinedData));
-                    res.send(data)
+                    res.send(combinedData)
                 })
                 .catch(error => {
                     res.send(error)
@@ -99,11 +99,13 @@ function randomNum(min, max) {
 // Get three random previously submitted urls for the homepage
 app.get('/exampleSlides', function(req,res) {
     fs.readdir("data/", function(err, items) {
-        let selections = randomNum(0,items.length-1);
+        console.log(items)
+        let selections = randomNum(0,items.length);
         console.log(selections)
         let data = []
         for (let i in selections){
-            let rawData = fs.readFileSync('data/' + items[i]);
+            console.log(i)
+            let rawData = fs.readFileSync('data/' + items[selections[i]]);
             let jsonData = JSON.parse(rawData);
             console.log(Object.keys(jsonData))
             data.push(jsonData.channelDetails)

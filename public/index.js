@@ -15,8 +15,8 @@ fetch("/exampleSlides")
         let exampleA1 = example.getElementsByClassName("firstLink")
         let exampleA2 = example.getElementsByClassName("secondLink")
 
-        exampleH3.innerHTML = data[i].contents.title
-        
+        exampleH3.innerHTML = data[i].title
+        exampleA1.src = "https://www.are.na/" + data[i].user.slug + "/" + data[i].slug
     }
 
 
