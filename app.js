@@ -61,9 +61,29 @@ app.get('/data/:id', function(req,res) {
     });
 });
 
+function randomNum(min, max) {
+    var n = [];
+    while (n.length < 3){
+        num = Math.floor(Math.random() * max) + min
+        if (n.indexOf(num) == -1){
+            n.push(num);
+        }
+    }
+    return n;
+}
+
+// Get three random previously submitted urls for the homepage
 app.get('/exampleSlides', function(req,res) {
     fs.readdir("data/", function(err, items) {
-        console.log(items)
+        let selections = randomNum(0,items.length-1);
+        console.log(selections)
+        let data = []
+        for (let i in selections){
+            let rawData = fs.readFileSync('data/' + items[i]);
+            let jsonData = JSON.parse(rawData);
+            data.push(jsonData)
+        }
+        res.send(data)
     });
 })
 
