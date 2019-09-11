@@ -21,15 +21,21 @@
 </head>
 
 <body class="homePage">
-  <grid class="nav" colums=6>
-    <c span=1-4>
-      <h1><a href="#home">arena2slides</a></h1>
-    </c>
+  <section class="nav">
+    <grid colums=6>
+      <c>
+        <h1><a href="#home">arena2slides</a></h1>
+      </c>
+      <c>
+      </c>
+      <c>
+      </c>
+      <c>
+        <a href="#home">arena2slides</a>
+      </c>
+    </grid>
+  </section>
 
-    <c span=5-6>
-      <a href="#home">arena2slides</a>
-    </c>
-  </grid>
   <section class="hero">
     <grid columns=6>
 
@@ -41,17 +47,15 @@
 
       <c span=2-5 span-s=row class="searchSection">
         <div class="searchSection">
-          <input class="searchSection" id="arenaurl" type="text" name="arenaurl">
+          <input id="arenaurl" type="text" name="arenaurl" placeholder="https://www.are.na/dan-taeyoung/spatial-computing">
           <button id="submit" type="button">Make Show</button>
         </div>
 
       </c>
 
+
     </grid>
   </section>
-
-
-
   <section class="exampleSection">
 
     <grid columns=3>
@@ -61,10 +65,8 @@
           Loading Example 1
         </h3>
         <hr />
-
         <img src="" />
         <hr />
-
         <grid columns=2>
           <c class="eachExample" span-s=row>
             <div class="buttonWide">
@@ -80,7 +82,7 @@
         </grid>
       </c>
 
-      <c id="exampleTwo" class="eachExample">
+      <c id="exampleTwo" class="eachExample" span-s=row>
         <h3>
           Loading Project 2
         </h3>
@@ -100,7 +102,6 @@
           <c class="eachExample" span-s=row>
             <div class="buttonWide">
               <a target="_blank" class="button secondLink">Presentation</a>
-
             </div>
           </c>
         </grid>
@@ -133,6 +134,7 @@
       </c>
     </grid>
   </section>
+
 
 
   <footer>
