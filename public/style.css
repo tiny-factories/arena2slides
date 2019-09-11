@@ -5,11 +5,13 @@ body {
   padding: 0vh 0vw 0vh 0vw !important;
   margin: 0px !important;
 
+
 }
 .homePage{
   /* background-color: #fae123; */
   height:100vh;
 }
+
 
 
 img {
@@ -33,26 +35,31 @@ h1 {
 
 .howTo{
 font-weight: 400 !important;
+padding-bottom: 10vh;
+font-size: 36px;
+line-height: 1.3em;
 
 }
 
 
 .buttonWide{
   box-sizing: border-box;
-display: flex;
--webkit-box-align: center;
-align-items: center;
--webkit-box-pack: center;
-justify-content: center;
-flex-direction: column;
-width: 100%;
-height: 100%;
-border-top-width: 2px;
-border-right-width: 2px;
-border-bottom-width: 2px;
-border-left-width: 2px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border-top-width: 2px;
+  border-right-width: 2px;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
 
-
+}
+.line-break{
+  border-top: 6px solid purple;
 }
 
 
@@ -142,6 +149,7 @@ a:hover + .additional-info {
 .searchSection{
 
   padding:10vh 0 10vh 0;
+
 
 }
 footer{
