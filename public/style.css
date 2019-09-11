@@ -12,7 +12,17 @@ body {
   height:100vh;
 }
 
+.nav{
 
+  position: fixed;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 2.5vw;
+  overflow: hidden;
+
+
+}
 
 img {
   width: 100%;
@@ -24,8 +34,10 @@ img {
 
 
 .exampleSection {
-  /* padding: 30vh 0 0 0; */
-
+  max-width: 80vw;
+  object-fit: contain;
+  text-align:center;
+  display:block;
 
 }
 
@@ -35,9 +47,13 @@ h1 {
 
 .howTo{
 font-weight: 400 !important;
+padding-top: 10Vh;
 padding-bottom: 10vh;
 font-size: 36px;
 line-height: 1.3em;
+padding: 10vh 0 10vh 0;
+align: center;
+text-align: center;
 
 }
 
@@ -77,10 +93,7 @@ padding:0 2.5vw 0 2.5vw;
   padding-left: 5px;
 }
 
-.hero{
-  padding: 10vh 0 10vh 0;
-  align: center;
-  text-align: center;
+
 
 
 .slides {
@@ -106,14 +119,6 @@ padding:0 2.5vw 0 2.5vw;
 }
 
 
-header{
-
-}
-
-
-
-
-
 /* information icon on the bottom right corner */
 #info-icon {
     position: relative;
@@ -137,21 +142,18 @@ a:hover + .additional-info {
     display: block;
 }
 
-#arenaurl{
-  width: 60vw;
-  height: 5vh;
-  border-radius: 1rem;
-}
+
 #submit{
   height: 5vh;
 }
 
-.searchSection{
-
-  padding:10vh 0 10vh 0;
+.searchSection input{
+  width: 10vh;
 
 
 }
+
+
 footer{
   position: fixed;
   bottom: 0;

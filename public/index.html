@@ -1,135 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>arena2slides</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:description" content="Create a slide show from any arena collection" />
-    <meta property="og:determiner" content="the" />
-    <meta property="og:site_name" content="arena2slides" />
 
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css">
+<head>
+  <title>arena2slides</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:description" content="Create a slide show from any arena collection" />
+  <meta property="og:determiner" content="the" />
+  <meta property="og:site_name" content="arena2slides" />
 
-    <link rel="stylesheet" href="/raster.css">
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="/style.css">
+
+  <link rel="stylesheet" href="/raster.css">
 
 
-    <!-- import the webpage's javascript file -->
-    <script src="/index.js" defer></script>
-  </head>
-  <body class="homePage">
-  <header>
+  <!-- import the webpage's javascript file -->
+  <script src="/index.js" defer></script>
+</head>
 
-  </header>
-    <section class="hero">
+<body class="homePage">
+  <grid class="nav" colums=6>
+    <c span=1-4>
+      <h1><a href="#home">arena2slides</a></h1>
+    </c>
+
+    <c span=5-6>
+      <a href="#home">arena2slides</a>
+    </c>
+  </grid>
+  <section class="hero">
     <grid columns=6>
-      <c span=row>
-        <h1>arena 2 slides</h1>
-        <br/>
-      </c>
+
       <!-- Steps pn how to use -->
       <c span=2-5 class="howTo">
-        <p> Words are words about how to use this app something like "Make a quick slide show from"<a href="https://www.are.na/tiny-factories/arena2slide">are.na</a> collecton. Just paste the collection url in the box below!</p>
+        <p>Make a slide presentation from any <a href="https://www.are.na/tiny-factories/arena2slide">are.na</a> collecton by pasting the url below.</p>
       </c>
 
 
-      <c span=row span-s=row class="searchSection">
-       <input class="searchSection" id="arenaurl" type="text" name="arenaurl">
-        <button id="submit" type="button">Make Show</button>
-        <br/>
+      <c span=2-5 span-s=row class="searchSection">
+        <div class="searchSection">
+          <input class="searchSection" id="arenaurl" type="text" name="arenaurl">
+          <button id="submit" type="button">Make Show</button>
+        </div>
+
       </c>
 
     </grid>
-    </section>
+  </section>
 
 
 
-    <section class="exampleSection">
+  <section class="exampleSection">
 
-      <grid columns=6>
+    <grid columns=3>
 
-        <c id="exampleOne" class="eachExample" span=1-2 span-s=row>
-          <h3>
-            Loading Example 1
-          </h3>
-          <hr/>
+      <c id="exampleOne" class="eachExample" span-s=row>
+        <h3>
+          Loading Example 1
+        </h3>
+        <hr />
 
-          <img src=""/>
-          <hr/>
+        <img src="" />
+        <hr />
 
-          <grid columns=2>
-            <c class="eachExample" span-s=row>
-              <div class="buttonWide">
-                <a target="_blank" class="button firstLink">Source</a>
-              </div>
-            </c>
-
-            <c class="eachExample" span-s=row>
+        <grid columns=2>
+          <c class="eachExample" span-s=row>
             <div class="buttonWide">
-                <a target="_blank" class="button secondLink">Presentation</a>
-              </div>
-            </c>
-            </grid>
-        </c>
+              <a target="_blank" class="button firstLink">Source</a>
+            </div>
+          </c>
 
-        <c id="exampleTwo" class="eachExample" span=3-4>
-            <h3>
-              Loading Project 2
-            </h3>
-            <hr/>
+          <c class="eachExample" span-s=row>
+            <div class="buttonWide">
+              <a target="_blank" class="button secondLink">Presentation</a>
+            </div>
+          </c>
+        </grid>
+      </c>
 
-            <img src=""/>
-            <hr/>
+      <c id="exampleTwo" class="eachExample">
+        <h3>
+          Loading Project 2
+        </h3>
+        <hr />
 
-            <grid columns=2>
-              <c class="eachExample" span-s=row>
-                <div class="buttonWide">
-                  <a target="_blank" class="button firstLink">Source</a>
+        <img src="" />
+        <hr />
 
-                </div>
-              </c>
+        <grid columns=2>
+          <c class="eachExample" span-s=row>
+            <div class="buttonWide">
+              <a target="_blank" class="button firstLink">Source</a>
 
-              <c class="eachExample" span-s=row>
-              <div class="buttonWide">
-                  <a target="_blank" class="button secondLink">Presentation</a>
+            </div>
+          </c>
 
-                </div>
-              </c>
-              </grid>
-        </c>
+          <c class="eachExample" span-s=row>
+            <div class="buttonWide">
+              <a target="_blank" class="button secondLink">Presentation</a>
 
-        <c id="exampleThree" class="eachExample" span=5-6 span-s=row>
-            <h3>
-              Loading Example 3
-            </h3>
-            <hr/>
+            </div>
+          </c>
+        </grid>
+      </c>
 
-            <img src=""/>
-            <hr/>
+      <c id="exampleThree" class="eachExample" span-s=row>
+        <h3>
+          Loading Example 3
+        </h3>
+        <hr />
 
-            <grid columns=2>
-              <c class="eachExample" span-s=row>
-                <div class="buttonWide">
-                  <a target="_blank" class="button firstLink">Source</a>
+        <img src="" />
+        <hr />
 
-                </div>
-              </c>
+        <grid columns=2>
+          <c class="eachExample" span-s=row>
+            <div class="buttonWide">
+              <a target="_blank" class="button firstLink">Source</a>
 
-              <c class="eachExample" span-s=row>
-              <div class="buttonWide">
-                  <a target="_blank" class="button secondLink">Presentation</a>
+            </div>
+          </c>
 
-                </div>
-              </c>
-              </grid>
-        </c>
-      </grid>
-    </section>
+          <c class="eachExample" span-s=row>
+            <div class="buttonWide">
+              <a target="_blank" class="button secondLink">Presentation</a>
+
+            </div>
+          </c>
+        </grid>
+      </c>
+    </grid>
+  </section>
 
 
-    <footer>
-     <grid columns=3>
+  <footer>
+    <grid columns=3>
       <c>
         <p>Other link</p>
       </c>
@@ -139,10 +146,11 @@
       </c>
       <c>
         <p><a href="https://garden.tinyfactories.space/#random">
-          🏭 tiny factories</a></p>
+            🏭 tiny factories</a></p>
       </c>
-     </grid>
+    </grid>
 
   </footer>
-  </body>
+</body>
+
 </html>
