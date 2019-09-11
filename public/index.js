@@ -8,7 +8,13 @@ function createGIF (content, element, index){
 
         //Get the square version of the image
         image.src = content[index].image.square.url
-    } else{
+    } 
+    else if (content[index+1].image != undefined){
+        console.log("could not find inital image block, looking for next one..")
+        //If the initial block does not have image look for the next one.
+        image.src = content[index+1].image.square.url
+    }
+    else{
         image.src = "/assets/white.jpg"
     }
 
