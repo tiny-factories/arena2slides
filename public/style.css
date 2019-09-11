@@ -123,6 +123,7 @@ a:hover+.additional-info {
 
 .searchSection{
   height: 50px;
+
 }
 
 
@@ -134,7 +135,7 @@ a:hover+.additional-info {
 
 }
 .searchSection input {
-  width: 70%;
+  float: left;
   height: 45px;
   display: inline-block;
  text-decoration: none;
@@ -142,11 +143,11 @@ a:hover+.additional-info {
  border: solid 2px rgba(0,0,0,.3);
  border-radius: 3px;
  transition: .2s;
+ width: 40vw;
 
 }
 
 .searchSection button {
-   display: inline-block;
     text-decoration: none;
     color: rgb(23, 172, 16);
     border: solid 2px rgb(23, 172, 16);
@@ -155,7 +156,11 @@ a:hover+.additional-info {
     position: relative;
     background: #fff;
     height: 50px;
-    width: 100px;
+    float: right;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+
+
 
 
 
@@ -168,7 +173,7 @@ a:hover+.additional-info {
 }
 
 hr{
-  color:rgba(0,0,0,.3);
+  border-color:rgba(0,0,0,.3);
 }
 
 /* Example Cards */
@@ -189,7 +194,8 @@ hr{
   border-left-width: 2px;
   align-items: center;
   justify-content: center;
-  font-size:3rem;
+
+
 }
 .eachExample a {
     padding: 0.3em 1em;
@@ -197,7 +203,9 @@ hr{
     text-align: center;
     text-decoration: none;
     transition: .2s;
-    font-size: 1.6rem;
+    font-size:1.2rem;
+    text-transform: uppercase;
+
     border-radius:3px;
 
 }
@@ -211,7 +219,7 @@ hr{
 
 .firstLink:hover{
   color: #fff;
-  border: solid 2px rgba(0,0,0,.3);
+  border: solid 2px #fff;
   background: rgba(0,0,0,.3);
 }
 .firstLink:visited{
