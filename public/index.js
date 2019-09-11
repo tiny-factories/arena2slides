@@ -5,7 +5,9 @@
 function createGIF (content, element, index){
     let image = element.querySelector("img");
     if (content[index].image != undefined){
-        image.src = content[index].image.thumb.url
+
+        //Get the square version of the image
+        image.src = content[index].image.square.url
     } else{
         image.src = "/assets/white.jpg"
     }
