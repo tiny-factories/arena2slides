@@ -64,13 +64,35 @@ fetch("/data/" + channel)
        for (var i = 0 ; i < arenaJSON.length ; i++){
 
             //If there is no title 
-            if (arenaJSON[i].title != null){
-                arenaTitle.unshift(arenaJSON[i].title);
-            } else {
-                arenaUrl.unshift("Untitled Page");
-            }
 
             arenaDescription.unshift(arenaJSON[i].description);
+
+            if (arenaJSON[i].title == "" && arenaJSON[i].content !== ""){
+                console.log("No Title but found a content");
+                arenaTitle.unshift(arenaJSON[i].content);
+
+            } else if (arenaJSON[i].title == "" && arenaJSON[i].content == "") {
+                console.log("Did Not Find Title and Content");
+                arenaTitle.unshift("#");
+
+            } else if (arenaJSON[i].title !== "" && arenaJSON[i].content !== "") {
+                console.log("Found both the Title and Content");
+                arenaTitle.unshift(arenaJSON[i].content);
+            }else{
+                console.log("Just the good old title!");
+                arenaTitle.unshift(arenaJSON[i].title);
+            }
+
+            /*
+            if (arenaJSON[i].title != null){
+                console.log("Found Title!");
+                arenaTitle.unshift(arenaJSON[i].title);
+            } else {
+                console.log("Did Not Find Title!");
+                arenaTitle.unshift("Untitled Page");
+            }
+            */
+
 
             //If there is no source.url section...
             if (arenaJSON[i].source != null){
@@ -83,7 +105,7 @@ fetch("/data/" + channel)
             if (arenaJSON[i].image != null){
                 arenaImg.unshift(arenaJSON[i].image.display.url);
             } else {
-                arenaImg.unshift("https://d2w9rnfcy7mm78.cloudfront.net/1823396/original_a478a524577ed32227e7b36894cbb04a.png");
+                arenaImg.unshift("https://pbs.twimg.com/profile_images/859809004079509505/ytma801M_400x400.jpg");
             }
         }
         console.log("JSON file is now loaded in array and ready!")
