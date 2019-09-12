@@ -55,9 +55,9 @@ h1 {
   font-weight: 400 !important;
   padding-top: 10Vh;
   padding-bottom: 10vh;
-  font-size: 36px;
-  line-height: 1.3em;
-  padding: 10vh 0 10vh 0;
+  font-size: calc(1em + 1.5vw);
+  line-height: calc(1em + 1vw);
+  padding: 8vh 5vw 10vh 5vw;
   align: center;
   text-align: center;
 }
