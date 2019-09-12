@@ -130,14 +130,7 @@ a:hover+.additional-info {
   height: 50px;
   display: flex;
  justify-content: center;
-}
-
-.searchSection input::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: gray;
-  padding-left: 1vw;
-  font-size: 1.5em;
-  opacity: 1;
+ font-size: 1.2em;
 }
 
 .searchSection input {
@@ -148,6 +141,7 @@ a:hover+.additional-info {
   border: solid 2px rgba(0, 0, 0, .3);
   border-radius: 3px;
   transition: .2s;
+  padding-left: 1vw;
   width: 40vw;
 }
 
@@ -162,7 +156,6 @@ a:hover+.additional-info {
   height: 50px;
   float: right;
   font-size: 1.2rem;
-  text-transform: uppercase;
 }
 
 .searchSection button:hover {

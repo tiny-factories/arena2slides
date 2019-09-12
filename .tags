@@ -5166,7 +5166,7 @@ grunt-karma	node_modules/axios/package.json	/^    "grunt-karma": "^2.0.0",$/;"	f
 grunt-mocha-test	node_modules/axios/package.json	/^    "grunt-mocha-test": "^0.13.3",$/;"	f
 grunt-ts	node_modules/axios/package.json	/^    "grunt-ts": "^6.0.0-beta.19",$/;"	f
 grunt-webpack	node_modules/axios/package.json	/^    "grunt-webpack": "^1.0.18",$/;"	f
-gtag	public/index.html	/^  function gtag(){dataLayer.push(arguments);}$/;"	f
+gtag	public/index.html	/^    function gtag() {$/;"	f
 gtag	public/slide.html	/^  function gtag(){dataLayer.push(arguments);}$/;"	f
 h	node_modules/ms/index.js	/^var h = m * 60;$/;"	v
 h	node_modules/send/node_modules/debug/node_modules/ms/index.js	/^var h = m * 60;$/;"	v
