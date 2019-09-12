@@ -22,8 +22,9 @@ app.get('/slide/:id',function(req,res) {
 
 // Get data for a channel in arena
 const getData = (id) => {
+    // https://api.are.na/v2/channels/how-do-you-use-the-internet-mindfully?per=100
     try {
-        return axios.get('https://api.are.na/v2/channels/' + id + '/contents');
+        return axios.get('https://api.are.na/v2/channels/' + id + '/contents?per=100');
     } catch (error) {
         console.error(error);
         return error
@@ -57,7 +58,7 @@ app.get('/data/:id', function(req,res) {
         if (items.includes(id + ".json")){
             res.send(getSavedData(id))
         } else {
-            // Get contents of a channel
+            //Get contents of a channel
             getData(id)
             .then(response => {
                 let data = response.data
@@ -76,7 +77,6 @@ app.get('/data/:id', function(req,res) {
                 .catch(error => {
                     res.send(error)
                 })
-
             })
             .catch(error => {
                 res.send(error)
