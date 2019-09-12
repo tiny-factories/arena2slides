@@ -3247,6 +3247,7 @@ currentQueue	node_modules/process/browser.js	/^var currentQueue;$/;"	v
 d	node_modules/ms/index.js	/^var d = h * 24;$/;"	v
 d	node_modules/send/node_modules/debug/node_modules/ms/index.js	/^var d = h * 24;$/;"	v
 d	node_modules/send/node_modules/ms/index.js	/^var d = h * 24;$/;"	v
+datediff	app.js	/^function datediff(first, second) {$/;"	f
 debug	node_modules/body-parser/package.json	/^    "debug": "2.6.9",$/;"	f
 debug	node_modules/express/lib/application.js	/^var debug = require('debug')('express:application');$/;"	v
 debug	node_modules/express/lib/router/index.js	/^var debug = require('debug')('express:router');$/;"	v
@@ -5165,12 +5166,15 @@ grunt-karma	node_modules/axios/package.json	/^    "grunt-karma": "^2.0.0",$/;"	f
 grunt-mocha-test	node_modules/axios/package.json	/^    "grunt-mocha-test": "^0.13.3",$/;"	f
 grunt-ts	node_modules/axios/package.json	/^    "grunt-ts": "^6.0.0-beta.19",$/;"	f
 grunt-webpack	node_modules/axios/package.json	/^    "grunt-webpack": "^1.0.18",$/;"	f
+gtag	public/index.html	/^  function gtag(){dataLayer.push(arguments);}$/;"	f
+gtag	public/slide.html	/^  function gtag(){dataLayer.push(arguments);}$/;"	f
 h	node_modules/ms/index.js	/^var h = m * 60;$/;"	v
 h	node_modules/send/node_modules/debug/node_modules/ms/index.js	/^var h = m * 60;$/;"	v
 h	node_modules/send/node_modules/ms/index.js	/^var h = m * 60;$/;"	v
 halt	node_modules/raw-body/index.js	/^function halt (stream) {$/;"	f
 handle	node_modules/express/lib/application.js	/^app.handle = function handle(req, res, callback) {$/;"	f
 handle	node_modules/express/lib/router/index.js	/^proto.handle = function handle(req, res, out) {$/;"	f
+handleGetData	app.js	/^function handleGetData(id){$/;"	f
 hasOwnProperty	node_modules/util/util.js	/^function hasOwnProperty(obj, prop) {$/;"	f
 hbs	node_modules/express/package.json	/^    "hbs": "4.0.4",$/;"	f
 headersSent.normalizeList	node_modules/send/index.js	/^function normalizeList (val, name) {$/;"	f
