@@ -19,7 +19,7 @@ section {
     height: 80vh;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 }
 
 #mainImage{
@@ -135,6 +135,7 @@ footer img{
 
 img:hover + .additional-info  {
     display: block;
+    z-index: 1;
 }
 
 .content-mobile h1 {display: block !important;}
