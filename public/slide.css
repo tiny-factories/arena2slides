@@ -1,8 +1,21 @@
+@font-face{
+  font-family: "inter-regular";
+  src: url(/assets/Inter/Inter-Regular.woff), url(/assets/Inter/Inter-Regular.woff2);
+  font-weight: 400;
+	font-style: normal;
+}
+@font-face{
+  font-family: "inter-bold";
+  src: url(/assets/Inter/Inter-Bold.woff), url(/assets/Inter/Inter-Bold.woff2);
+  font-weight: 500;
+	font-style: bold;
+}
+
 
 html{
     background-color: black;
     color : white;
-    font-family: 'Roboto', sans-serif;
+    font-family: "inter-regular", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-kerning: normal;
 }
 
@@ -40,12 +53,22 @@ section {
 
     font-weight:500;
     letter-spacing: -0.2px;
+<<<<<<< Updated upstream
+=======
+    line-height: 45px;
+    font-family: "inter-bold", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+>>>>>>> Stashed changes
 }
 
 
 #mainDescription{
+<<<<<<< Updated upstream
     font-size: calc(1em + 0.4vw);
     line-height: calc(1em + 0.4vw);
+=======
+  font-family: "inter-regular", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+>>>>>>> Stashed changes
 
     font-weight:400;
     vertical-align : bottom;
@@ -66,7 +89,7 @@ section {
 #pagenum{
     position: absolute;
     bottom:0px;
-    left: 35%; 
+    left: 35%;
     opacity: 0.4;
 }
 
@@ -189,7 +212,7 @@ img:hover + .additional-info  {
     #mainTitle{
         display: none !important;
     }
-    
+
     #mainDescription{
         display: none !important;
     }
@@ -201,7 +224,7 @@ img:hover + .additional-info  {
     #pagenum{
         display: none !important;
     }
-    
+
     #mobileMessage  {
         display: block !important;
         font-size: 30px;
@@ -211,6 +234,6 @@ img:hover + .additional-info  {
         z-index: 20;
     }
 
- 
+
 
   }

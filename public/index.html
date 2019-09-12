@@ -6,36 +6,55 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:description" content="Create a slide show from any arena collection" />
-  <meta property="og:determiner" content="the" />
-  <meta property="og:site_name" content="arena2slides" />
+  <meta charset='utf-8'>
+  <meta name='author' content='Tiny Factories'>
+  <meta name='description' content='arena2slides' />
+  <meta name='keywords' content='arena2slides, arena, slide generator,tiny factores, weiwei hsu, tomo kihara, matt siu, william felker' />
+  <meta name='license' content='name=BY-NC-SA(4.0), url=https://creativecommons.org/licenses/by-nc-sa/4.0/' />
+  <meta name='thumbnail' content='public/assets/meta card.jpeg' />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name='twitter:card' content='summary'>
+  <meta name='twitter:site' content='@tiny_factories'>
+  <meta name='twitter:title' content='arena2slides'>
+  <meta name='twitter:description' content='Create a slide show from any arena collection'>
+  <meta name='twitter:creator' content='@tiny_factores'>
+  <meta name='twitter:image' content='public/assets/meta card.jpeg'>
+  <meta property='og:title' content='arena2slides' />
+  <meta property='og:type' content='tool' />
+  <meta property='og:url' content='https://arena2slides.herokuapp.com' />
+  <meta property='og:image' content='public/assets/meta card.jpegg' />
+  <meta property='og:description' content='Create a slide show from any arena collection' />
+  <meta property='og:site_name' content='arena2slides' />
 
   <!-- import the webpage's stylesheet -->
-  <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="/style.css">
-
+  <link rel="stylesheet" href="/index.css">
   <link rel="stylesheet" href="/raster.css">
-
+  <link rel='icon' href='favicon.ico' type='assets/icon.png'/ >
 
   <!-- import the webpage's javascript file -->
   <script src="/index.js" defer></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134902527-6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134902527-6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-134902527-6');
-</script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-134902527-6');
+  </script>
 </head>
 
 <body class="homePage">
   <section class="nav">
     <grid colums=6>
       <c>
-        <h1><a href="#home">arena2slides</a></h1>
+        <div class="logoTitle">
+          <a style="padding-right:1.5vw;" href="https://arena2slides.herokuapp.com"><img src="assets/icon.png" style="width:50px;"alt="Logo of arena2slide"></a>
+          <a href="https://arena2slides.herokuapp.com"><h1>arena2slides</h1></a>
+        </div>
       </c>
       <c>
       </c>
@@ -150,12 +169,12 @@
 
   <footer class="foot">
 
-          <span> <a style="color:black;" href="https://are.na">Are.na</a> is a visual organization tool that help you to save content, create collections, and connect ideas with other people. <span>
+    <span> <a style="color:black;" href="https://are.na">Are.na</a> is a visual organization tool that help you to save content, create collections, and connect ideas with other people. <span>
 
-          <br>
-            <span> This is a little plugin built by friends at <a style="color:black;" href="https://twitter.com/gndclouds">🏭 Tiny Factories</a>, because we all use Are.na! <span>
+        <br>
+        <span> This is a little plugin built by friends at <a style="color:black;" href="https://twitter.com/gndclouds">🏭 Tiny Factories</a>, because we all use Are.na! <span>
 
-</footer>
+  </footer>
 </body>
 
 </html>
