@@ -1,5 +1,6 @@
 let url = window.location.href;
 let channel = url.split("/")[4]
+let wwwURL;
 
 
 //Getting the arena JSON data into front end————————————————————————
@@ -60,8 +61,11 @@ fetch("/data/" + channel)
 
         arenaJSON = data.channelContents.contents;
         console.log(arenaJSON);
-
         console.log("Length of JSON file is : " + arenaJSON.length);
+
+        wwwURL = "https://www.are.na/" + arenaJSON[1].user.slug + "/" + channel;
+
+        //https://www.are.na/tuna-jedi/about-smart-city
 
        for (var i = 0 ; i < arenaJSON.length ; i++){
 
@@ -85,7 +89,6 @@ fetch("/data/" + channel)
                 arenaTitle.unshift(arenaJSON[i].title);
             }
 
-        
 
             //If there is no source.url section...
             if (arenaJSON[i].source != null){
@@ -136,8 +139,8 @@ const updateSection= () => {
 
     //Change the size of the text depending on the length of the text
 
-    /*
-    if(arenaTitle[slideNumber].length > 200){
+    
+    if(arenaTitle[slideNumber].length > 100){
         console.log("The text is long so I changed the text sise :" + arenaTitle[slideNumber].length);
         titleTag.classList.add("long");
         titleTag.classList.remove("short");
@@ -152,7 +155,7 @@ const updateSection= () => {
         titleTag.classList.remove("long");
         titleTag.classList.remove("short");
     }
-    */
+    
 
 }
 

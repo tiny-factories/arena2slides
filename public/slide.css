@@ -39,6 +39,14 @@ section {
     line-height: 45px;
 }
 
+.long{
+    font-size: 30px;
+}
+
+.short{
+    font-size: 60px;
+}
+
 #mainDescription{
     font-weight:400;
     font-size: 16px;
