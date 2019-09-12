@@ -1,8 +1,21 @@
+@font-face{
+  font-family: "inter-regular";
+  src: url(/assets/Inter/Inter-Regular.woff), url(/assets/Inter/Inter-Regular.woff2);
+  font-weight: 400;
+	font-style: normal;
+}
+@font-face{
+  font-family: "inter-bold";
+  src: url(/assets/Inter/Inter-Bold.woff), url(/assets/Inter/Inter-Bold.woff2);
+  font-weight: 500;
+	font-style: bold;
+}
+
 
 html{
     background-color: black;
     color : white;
-    font-family: 'Roboto', sans-serif;
+    font-family: "inter-regular", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-kerning: normal;
 }
 
@@ -28,41 +41,48 @@ section {
     margin: 0;
 }
 
+
+
 .text_section{
     height: 80vh;
 }
 
 #mainTitle{
-    font-size: 40px;
+    font-size: calc(1em + 3vw);
+    line-height: calc(1em + 0.5vw);
+
     font-weight:500;
     letter-spacing: -0.2px;
-    line-height: 45px;
 }
 
 
 #mainDescription{
+  font-family: "inter-regular", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+  font-size: calc(1em + 0.4vw);
+  line-height: calc(1em + 0.5vw);
+  
     font-weight:400;
-    font-size: 16px;
     vertical-align : bottom;
-    margin-top: 40%;
+    margin-top: 35%;
     opacity: 0.7;
-    line-height: 25px;
 }
 
 .long{
-    font-size: 25px !important;
-    line-height: 30px !important;
+    font-size: calc(0.5em + 1.6vw) !important;
+    line-height: calc(1em + 0.3vw ) !important;
 }
 
 .short{
-    font-size: 50px !important;
-    line-height: 50px !important;
+    font-size: calc(2em + 4vw) !important;
+    line-height: calc(1em + 0.2vw) !important;
 }
 
 #pagenum{
     position: absolute;
-    top:0px;
-    right: 0px; 
+    bottom:0px;
+    left: 35%;
+    opacity: 0.4;
 }
 
 .control_wrapper{
@@ -74,7 +94,13 @@ section {
 
 .control_wrapper img{
     width : 40px;
+    height : 40px;
     margin-right: 5px;
+    opacity: 0.7;
+}
+
+.control_wrapper img:hover{
+    opacity: 1;
 }
 
 .next:hover{
@@ -140,11 +166,16 @@ footer img{
 #info-icon img {
     z-index: 10;
     position: fixed;
-    bottom: 0px;
-    right: 0px;
-    width: 30px;
-    height: 30px;
+    bottom: 10px;
+    right: 10px;
+    width: 22px;
+    height: 22px;
     margin: 0px 25px 25px 0px;
+    opacity: 0.4;
+}
+
+#info-icon img:hover {
+    opacity: 1;
 }
 
 .additional-info {
@@ -160,7 +191,7 @@ img:hover + .additional-info  {
     display: none !important;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
 
     html{
         background-color: black;
@@ -173,7 +204,7 @@ img:hover + .additional-info  {
     #mainTitle{
         display: none !important;
     }
-    
+
     #mainDescription{
         display: none !important;
     }
@@ -185,7 +216,7 @@ img:hover + .additional-info  {
     #pagenum{
         display: none !important;
     }
-    
+
     #mobileMessage  {
         display: block !important;
         font-size: 30px;
@@ -195,6 +226,6 @@ img:hover + .additional-info  {
         z-index: 20;
     }
 
- 
+
 
   }

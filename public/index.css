@@ -1,6 +1,18 @@
-/* CSS files add styling rules to your content */
+@font-face{
+  font-family: "inter-regular";
+  src: url(/assets/Inter/Inter-Regular.woff), url(/assets/Inter/Inter-Regular.woff2);
+  font-weight: 400;
+	font-style: normal;
+}
+@font-face{
+  font-family: "inter-bold";
+  src: url(/assets/Inter/Inter-Bold.woff), url(/assets/Inter/Inter-Bold.woff2);
+  font-weight: 500;
+	font-style: bold;
+}
+
 body {
-  font-family: 'Nunito', sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "inter-regular", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   padding: 0vh 0vw 0vh 0vw;
   margin: 0px;
 }
@@ -35,6 +47,8 @@ img {
 
 h1 {
   font-size: 20 rem;
+  font-family: "inter-bold", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
 }
 
 .howTo {
@@ -115,12 +129,8 @@ a:hover+.additional-info {
 .searchSection {
   height: 50px;
   display: flex;
-  justify-content: center;
-}
-
-input[type=text] {
-  padding-left: 1vw;
-
+ justify-content: center;
+ font-size: 1.2em;
 }
 
 .searchSection input {
@@ -131,9 +141,8 @@ input[type=text] {
   border: solid 2px rgba(0, 0, 0, .3);
   border-radius: 3px;
   transition: .2s;
+  padding-left: 1vw;
   width: 40vw;
-  font-size: 1.2em;
-  opacity: 1;
 }
 
 .searchSection button {
@@ -147,7 +156,6 @@ input[type=text] {
   height: 50px;
   float: right;
   font-size: 1.2rem;
-
 }
 
 .searchSection button:hover {
@@ -243,3 +251,14 @@ hr {
   margin: 0 10px 0 10px;
   cursor: pointer;
 } */
+
+.logoTitle{
+
+
+    display: flex;
+  align-items:center;
+
+}
+.logoTitle a{
+  text-decoration: none;
+}
