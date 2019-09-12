@@ -26,7 +26,7 @@ const getData = (id) => {
     try {
         return axios.get('https://api.are.na/v2/channels/' + id + '/contents?per=200');
     } catch (error) {
-        console.error(error);
+        // console.error(error);
         return error
     }
 }
@@ -35,7 +35,7 @@ const getChannelData = (id) => {
     try {
         return axios.get("https://api.are.na/v2/channels/" + id);
     } catch (error) {
-        console.error(error);
+        // console.error(error);
         return error
     }
 }
@@ -44,8 +44,8 @@ const getChannelData = (id) => {
 const getSavedData = (id) => {
     let rawData = fs.readFileSync('data/' + id + '.json');
     let jsonData = JSON.parse(rawData);
-    console.log(typeof jsonData)
-    console.log(jsonData)
+    // console.log(typeof jsonData)
+    // console.log(jsonData)
     return jsonData
 }
 
@@ -59,13 +59,13 @@ function datediff(first, second) {
 const checkLastUpdated = (id) => {
     let rawData = fs.readFileSync('last_updated.json');
     let jsonData = JSON.parse(rawData);
-    console.log(jsonData)
-    console.log(id)
+    // console.log(jsonData)
+    // console.log(id)
 
     let fileDate = new Date(jsonData[id])
     let currentDate = new Date()
-    console.log(fileDate)
-    console.log(currentDate)
+    // console.log(fileDate)
+    // console.log(currentDate)
     let numDays = datediff(fileDate,currentDate);
     console.log("Num days: " + numDays)
     if (numDays > 5){
@@ -105,7 +105,7 @@ function handleGetData(id){
 // If not saved, make an API call to get data.
 app.get('/data/:id', function(req,res) {
     let id = req.param("id");
-    console.log(id)
+    // console.log(id)
     fs.readdir("data/", function(err, items) {
         if (items.includes(id + ".json")){
             if (checkLastUpdated(id)) {
@@ -132,9 +132,9 @@ function randomNum(min, max) {
 // Get three random previously submitted urls for the homepage
 app.get('/exampleSlides', function(req,res) {
     fs.readdir("data/", function(err, items) {
-        console.log(items)
+        // console.log(items)
         let selections = randomNum(0,items.length);
-        console.log(selections)
+        // console.log(selections)
         let data = []
         for (let i in selections){
             console.log(i)
