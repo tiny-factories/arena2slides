@@ -53,22 +53,11 @@ section {
 
     font-weight:500;
     letter-spacing: -0.2px;
-<<<<<<< Updated upstream
-=======
-    line-height: 45px;
-    font-family: "inter-bold", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-
->>>>>>> Stashed changes
 }
 
 
 #mainDescription{
-<<<<<<< Updated upstream
-    font-size: calc(1em + 0.4vw);
-    line-height: calc(1em + 0.4vw);
-=======
   font-family: "inter-regular", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
->>>>>>> Stashed changes
 
     font-weight:400;
     vertical-align : bottom;
