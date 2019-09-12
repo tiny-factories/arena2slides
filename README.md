@@ -1,6 +1,6 @@
 #arena2slides
 
-
+![Arena GIF](arena.gif)
 
 
 
