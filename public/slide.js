@@ -70,17 +70,18 @@ fetch("/data/" + channel)
 
        for (var i = 0 ; i < arenaJSON.length ; i++){
 
-            //If there is no title
-
+            //Add description
             arenaDescription.unshift(arenaJSON[i].description);
 
+            //Makes sure to fill the Title even if there is no title
+            //For lazy people who don't even name their own shit.
             if (arenaJSON[i].title == "" && arenaJSON[i].content !== ""){
                 console.log("No Title but found a content");
                 arenaTitle.unshift(arenaJSON[i].content);
 
             } else if (arenaJSON[i].title == "" && arenaJSON[i].content == "") {
                 console.log("Did Not Find Title and Content");
-                arenaTitle.unshift("#");
+                arenaTitle.unshift("🖌️");
 
             } else if (arenaJSON[i].title !== "" && arenaJSON[i].content !== "") {
                 console.log("Found both the Title and Content");
