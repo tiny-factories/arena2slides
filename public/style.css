@@ -118,6 +118,10 @@ a:hover+.additional-info {
   justify-content: center;
 }
 
+input[type=text] {
+  padding-left: 1vw;
+
+}
 
 .searchSection input {
   height: 45px;
@@ -128,7 +132,6 @@ a:hover+.additional-info {
   border-radius: 3px;
   transition: .2s;
   width: 40vw;
-  padding-left: 1vw;
   font-size: 1.2em;
   opacity: 1;
 }

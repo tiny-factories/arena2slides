@@ -108,9 +108,9 @@ app.get('/data/:id', function(req,res) {
     // console.log(id)
     fs.readdir("data/", function(err, items) {
         if (items.includes(id + ".json")){
-            if (checkLastUpdated(id)) {
-                res.send(handleGetData(id))
-            }
+            // if (checkLastUpdated(id)) {
+            //     res.send(handleGetData(id))
+            // }
             res.send(getSavedData(id))
         } else {
             res.send(handleGetData(id))
