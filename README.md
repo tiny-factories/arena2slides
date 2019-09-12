@@ -43,11 +43,12 @@ TODO Features:
 - Change background based on picture background
 - Link back to the orginal block in arena
 - Hover meta data info on the slide
-- Create a new perminent url when a new arena collection is imported (Percictent urls) and collections of content generoated
-- List a few examples of content made with the tool on the home page
+- Create a new perminent url when a new arena collection is imported (Percictent urls) and collections of content generoated (DONE)
+- List a few examples of content made with the tool on the home page (DONE)
 - Create a chrome extention to make this for faster importing
 - If no text scale image into 80% of the width
 - Abuility to search the entire group of content in arena and whats already be querried 
+- 
 
 
 Refferences

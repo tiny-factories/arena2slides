@@ -142,7 +142,7 @@ const updateSection= () => {
     //Change the size of the text depending on the length of the text
 
 
-    if(arenaTitle[slideNumber].length > 100){
+    if(arenaTitle[slideNumber].length > 150){
         console.log("The text is long so I changed the text sise :" + arenaTitle[slideNumber].length);
         titleTag.classList.add("long");
         titleTag.classList.remove("short");
