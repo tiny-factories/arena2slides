@@ -1,8 +1,8 @@
 /* CSS files add styling rules to your content */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  padding: 0vh 0vw 0vh 0vw ;
-  margin: 0px ;
+  padding: 0vh 0vw 0vh 0vw;
+  margin: 0px;
 }
 
 .homePage {
@@ -15,7 +15,7 @@ body {
   width: 100%;
   list-style-type: none;
   margin: 0;
-  padding:2.5 2.5vw 2.5vh 2.5vw;
+  padding: 2.5 2.5vw 2.5vh 2.5vw;
 }
 
 img {
@@ -24,16 +24,15 @@ img {
   text-align: center;
   display: block;
 }
-.hero{
-  padding:10vh 10vw 10vh 10vw;
 
-
+.hero {
+  padding: 10vh 10vw 10vh 10vw;
 }
+
 .exampleSection {
-  padding:10vh 10vw 10vh 10vw;
-
-
+  padding: 10vh 10vw 10vh 10vw;
 }
+
 h1 {
   font-size: 20 rem;
 }
@@ -49,8 +48,6 @@ h1 {
   text-align: center;
 }
 
-
-
 .line-break {
   border-top: 6px solid purple;
 }
@@ -62,9 +59,8 @@ h1 {
 .eachExample h3 {
   text-align: left;
   line-height: 1em;
-   height: 1em;
-   overflow: hidden;
-
+  height: 1em;
+  overflow: hidden;
   text-overflow: ellipsis;
   font-size: 24px;
 }
@@ -84,7 +80,6 @@ h1 {
   transform: translate(-50%, -60%);
   width: 90vwv;
   text-align: center
-
 }
 
 /* .slides img{
@@ -117,67 +112,55 @@ a:hover+.additional-info {
   display: block;
 }
 
-
-
-
-
-.searchSection{
+.searchSection {
   height: 50px;
-
+  display: flex;
+ justify-content: center;
 }
 
-
-.searchSection input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+.searchSection input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: gray;
   padding-left: 1vw;
-  font-size:1.5em;
+  font-size: 1.5em;
   opacity: 1;
-
 }
+
 .searchSection input {
-  float: left;
   height: 45px;
   display: inline-block;
- text-decoration: none;
- color: #67c5ff;
- border: solid 2px rgba(0,0,0,.3);
- border-radius: 3px;
- transition: .2s;
- width: 40vw;
-
+  text-decoration: none;
+  color: #67c5ff;
+  border: solid 2px rgba(0, 0, 0, .3);
+  border-radius: 3px;
+  transition: .2s;
+  width: 40vw;
 }
 
 .searchSection button {
-    text-decoration: none;
-    color: rgb(23, 172, 16);
-    border: solid 2px rgb(23, 172, 16);
-    border-radius: 3px;
-    transition: .4s;
-    position: relative;
-    background: #fff;
-    height: 50px;
-    float: right;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-
-
-
-
-
-
-
+  text-decoration: none;
+  color: rgb(23, 172, 16);
+  border: solid 2px rgb(23, 172, 16);
+  border-radius: 3px;
+  transition: .4s;
+  position: relative;
+  background: #fff;
+  height: 50px;
+  float: right;
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }
+
 .searchSection button:hover {
-   background: rgb(23, 172, 16);
-   color: #fff;
+  background: rgb(23, 172, 16);
+  color: #fff;
 }
 
-hr{
-  border-color:rgba(0,0,0,.3);
+hr {
+  border-color: rgba(0, 0, 0, .3);
 }
 
 /* Example Cards */
-
 .buttonWide {
   box-sizing: border-box;
   display: flex;
@@ -194,70 +177,66 @@ hr{
   border-left-width: 2px;
   align-items: center;
   justify-content: center;
-
-
 }
+
 .eachExample a {
-    padding: 0.3em 1em;
-    width: 75%;
-    text-align: center;
-    text-decoration: none;
-    transition: .2s;
-    font-size:1.2rem;
-    text-transform: uppercase;
-
-    border-radius:3px;
-
+  padding: 0.3em 1em;
+  width: 75%;
+  text-align: center;
+  text-decoration: none;
+  transition: .2s;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border-radius: 3px;
 }
 
-
-
-.firstLink{
-  color: rgba(0,0,0,.3);
-  border: solid 2px rgba(0,0,0,.3);
+.firstLink {
+  color: rgba(0, 0, 0, .3);
+  border: solid 2px rgba(0, 0, 0, .3);
 }
 
-.firstLink:hover{
+.firstLink:hover {
   color: #fff;
   border: solid 2px #fff;
-  background: rgba(0,0,0,.3);
-}
-.firstLink:visited{
-  color: rgba(0,0,0,.3)
-  border: solid 2px rgba(0,0,0,.3);
+  background: rgba(0, 0, 0, .3);
 }
 
+.firstLink:visited {
+  color: rgba(0, 0, 0, .3) border: solid 2px rgba(0, 0, 0, .3);
+}
 
-
-.secondLink{
+.secondLink {
   color: rgb(23, 172, 16);
   border: solid 2px rgb(23, 172, 16);
 }
 
-.secondLink:hover{
+.secondLink:hover {
   color: #fff;
   border: solid 2px #fff;
   background: rgb(23, 172, 16);
 }
-.secondLink:visited{
+
+.secondLink:visited {
   color: rgb(23, 172, 16);
   border: solid 2px rgb(23, 172, 16);
 }
 
-
-
-
-footer {
-  padding-top: 10vh;
-  padding-bottom:5vh;
+/* .foot {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5vh 0 5vh 0;
+  padding: 3vh 0 3vh 0;
+} */
+.foot{
+  text-decoration: none;
+  list-style: none;
+ display: inline-block;
+ text-align: center;
+
 }
 
-footer img {
+/* footer img {
   margin: 0 10px 0 10px;
   cursor: pointer;
-}
+} */
