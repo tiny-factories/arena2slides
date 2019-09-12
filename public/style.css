@@ -115,16 +115,16 @@ a:hover+.additional-info {
 .searchSection {
   height: 50px;
   display: flex;
- justify-content: center;
+  justify-content: center;
 }
 
 .searchSection input::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: gray;
-  padding-left: 1vw;
-  font-size: 1.5em;
+  font-size: 1em;
   opacity: 1;
 }
+
 
 .searchSection input {
   height: 45px;
@@ -135,6 +135,9 @@ a:hover+.additional-info {
   border-radius: 3px;
   transition: .2s;
   width: 40vw;
+  padding-left: 1vw;
+  font-size: 1.5em;
+  opacity: 1;
 }
 
 .searchSection button {
