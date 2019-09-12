@@ -85,16 +85,7 @@ fetch("/data/" + channel)
                 arenaTitle.unshift(arenaJSON[i].title);
             }
 
-            /*
-            if (arenaJSON[i].title != null){
-                console.log("Found Title!");
-                arenaTitle.unshift(arenaJSON[i].title);
-            } else {
-                console.log("Did Not Find Title!");
-                arenaTitle.unshift("Untitled Page");
-            }
-            */
-
+        
 
             //If there is no source.url section...
             if (arenaJSON[i].source != null){
