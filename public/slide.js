@@ -23,6 +23,7 @@ const descriptionTag = document.getElementById("mainDescription");
 const imageTag = document.getElementById("mainImage");
 const linkTag = document.getElementById("mainLink");
 const pagenumTag = document.getElementById("pagenum");
+const sourceTag = document.getElementById("sourceLink");
 
 const nextTag = document.querySelector("img.next");
 const prevTag = document.querySelector("img.prev");
@@ -69,7 +70,7 @@ fetch("/data/" + channel)
 
        for (var i = 0 ; i < arenaJSON.length ; i++){
 
-            //If there is no title 
+            //If there is no title
 
             arenaDescription.unshift(arenaJSON[i].description);
 
@@ -124,6 +125,7 @@ const updateSection= () => {
     descriptionTag.innerHTML =  arenaDescription[slideNumber];
     imageTag.src = arenaImg[slideNumber] ;
     linkTag.href= arenaUrl[slideNumber] ;
+    sourceTag.href = wwwURL;
 
 
     //--------- Randomizing border color -------//
@@ -139,7 +141,7 @@ const updateSection= () => {
 
     //Change the size of the text depending on the length of the text
 
-    
+
     if(arenaTitle[slideNumber].length > 100){
         console.log("The text is long so I changed the text sise :" + arenaTitle[slideNumber].length);
         titleTag.classList.add("long");
@@ -155,7 +157,7 @@ const updateSection= () => {
         titleTag.classList.remove("long");
         titleTag.classList.remove("short");
     }
-    
+
 
 }
 
