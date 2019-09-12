@@ -1,5 +1,6 @@
 let url = window.location.href;
 let channel = url.split("/")[4]
+let wwwURL;
 
 
 //Getting the arena JSON data into front end————————————————————————
@@ -22,6 +23,7 @@ const descriptionTag = document.getElementById("mainDescription");
 const imageTag = document.getElementById("mainImage");
 const linkTag = document.getElementById("mainLink");
 const pagenumTag = document.getElementById("pagenum");
+const sourceTag = document.getElementById("sourceLink");
 
 const nextTag = document.querySelector("img.next");
 const prevTag = document.querySelector("img.prev");
@@ -60,12 +62,15 @@ fetch("/data/" + channel)
 
         arenaJSON = data.channelContents.contents;
         console.log(arenaJSON);
-
         console.log("Length of JSON file is : " + arenaJSON.length);
+
+        wwwURL = "https://www.are.na/" + arenaJSON[1].user.slug + "/" + channel;
+
+        //https://www.are.na/tuna-jedi/about-smart-city
 
        for (var i = 0 ; i < arenaJSON.length ; i++){
 
-            //If there is no title 
+            //If there is no title
 
             arenaDescription.unshift(arenaJSON[i].description);
 
@@ -84,16 +89,6 @@ fetch("/data/" + channel)
                 console.log("Just the good old title!");
                 arenaTitle.unshift(arenaJSON[i].title);
             }
-
-            /*
-            if (arenaJSON[i].title != null){
-                console.log("Found Title!");
-                arenaTitle.unshift(arenaJSON[i].title);
-            } else {
-                console.log("Did Not Find Title!");
-                arenaTitle.unshift("Untitled Page");
-            }
-            */
 
 
             //If there is no source.url section...
@@ -130,6 +125,7 @@ const updateSection= () => {
     descriptionTag.innerHTML =  arenaDescription[slideNumber];
     imageTag.src = arenaImg[slideNumber] ;
     linkTag.href= arenaUrl[slideNumber] ;
+    sourceTag.href = wwwURL;
 
 
     //--------- Randomizing border color -------//
@@ -145,8 +141,8 @@ const updateSection= () => {
 
     //Change the size of the text depending on the length of the text
 
-    /*
-    if(arenaTitle[slideNumber].length > 200){
+
+    if(arenaTitle[slideNumber].length > 100){
         console.log("The text is long so I changed the text sise :" + arenaTitle[slideNumber].length);
         titleTag.classList.add("long");
         titleTag.classList.remove("short");
@@ -161,7 +157,7 @@ const updateSection= () => {
         titleTag.classList.remove("long");
         titleTag.classList.remove("short");
     }
-    */
+
 
 }
 
