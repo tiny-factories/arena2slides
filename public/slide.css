@@ -59,6 +59,9 @@ section {
 #mainDescription{
   font-family: "inter-regular", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
+  font-size: calc(1em + 0.4vw);
+  line-height: calc(1em + 0.5vw);
+  
     font-weight:400;
     vertical-align : bottom;
     margin-top: 35%;
