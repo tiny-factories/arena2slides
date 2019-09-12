@@ -1,13 +1,51 @@
 
+html{
+    background-color: black;
+    color : white;
+}
 
+body{
+}
 
 section {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
+  width: 90%;
   text-align: left;
+}
+
+
+.image_section{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+#mainImage{
+    margin: 0;
+}
+
+.text_section{
+    height: 80vh;
+}
+
+#mainTitle{
+
+}
+
+#mainDescription{
+    vertical-align : bottom;
+    margin-top: 40%;
+    opacity: 0.7;
+}
+
+#pagenum{
+    position: absolute;
+    bottom:0px;
+    left: 0px; 
 }
 
 /* Border around the body tag */
@@ -15,6 +53,7 @@ section {
     background:transparent;
     position: fixed;
     transition: background-color 0.4s;
+    z-index: 2;
 	}
 	#left, #right {
 		top: 0; bottom: 0;
@@ -31,7 +70,6 @@ section {
 		#bottom { bottom: 0; }
 
 
-
 footer{
     position : fixed;
     bottom: 0;
@@ -44,6 +82,7 @@ footer{
     padding-bottom: 30px;
     cursor: pointer;
 }
+
 
 footer img{
   width: 2%; /* or any custom size */
@@ -69,16 +108,16 @@ footer img{
 /* information icon on the bottom right corner */
 #info-icon {
     position: relative;
-    margin: 15vh 15vh;
 }
 
 #info-icon img {
-    z-index: 1;
+    z-index: 10;
     position: fixed;
     bottom: 0px;
     right: 0px;
-    width: 5%;
-    height: 5%;
+    width: 30px;
+    height: 30px;
+    margin: 0px 25px 25px 0px;
 }
 
 .additional-info {

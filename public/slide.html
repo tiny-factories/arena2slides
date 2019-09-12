@@ -12,7 +12,6 @@
 
 
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/raster.css">
     <link rel="stylesheet" href="/slide.css">
 
@@ -22,7 +21,7 @@
   </head>
 
 
-  <body class="slides">
+  <body>
 
   <!-- The border frame change -->
   <div id="left" class="border"></div>
@@ -30,24 +29,24 @@
   <div id="top" class="border" ></div>
   <div id="bottom" class="border" ></div>
 
-    <section>
-      <grid columns=5>
+    <section class="slides">
+      <grid class="slides" columns=5>
 
-          <c span=1-3 span-s=row>
-              <!-- arena image -->
-              <a href="#" target="_blank" id="mainLink"><img id="mainImage" src="" alt="image"></a>
+          <c span=1-2 span-s=row>
+              <div class = "text_section">
+                  <h1 id="mainTitle">Loading Title from are.na...</h1>
+                  <h3 id="mainDescription">Loading Description from are.na...</h3>
+                  <div id = "pagenum"></div>
+                </div>
           </c>
 
-
-          <c span=4-5 span-s=row>
-              <div id = "pagenum"></div>
-              <h1 id="mainTitle">Loading Title from are.na...</h1>
-              <h3 id="mainDescription">Loading Description from are.na...</h3>
-
+          <c span=3-5 span-s=row>
+            <div class = "image_section">
+                <a href="#" target="_blank" id="mainLink"><img id="mainImage" src="" alt="image"></a>
+              </div>
           </c>
       </grid>
     </section>
-
 
     <div id="info-icon">
 
@@ -62,6 +61,7 @@
       </div>
 
     </div>
+
 
     <footer class = "ui_button">
 
