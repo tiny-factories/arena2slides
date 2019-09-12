@@ -152,6 +152,8 @@ a:hover+.additional-info {
 }
 
 .searchSection button:hover {
+  border: solid 2px rgb(23, 222, 16);
+
   background: rgb(23, 172, 16);
   color: #fff;
 }
@@ -197,12 +199,13 @@ hr {
 
 .firstLink:hover {
   color: #fff;
-  border: solid 2px #fff;
+  border: solid 2px rgba(240, 240, 240, .3);
   background: rgba(0, 0, 0, .3);
 }
 
 .firstLink:visited {
-  color: rgba(0, 0, 0, .3) border: solid 2px rgba(0, 0, 0, .3);
+  color: rgba(0, 0, 0, .3);
+  border: solid 2px rgba(0, 0, 0, .3);
 }
 
 .secondLink {
@@ -212,7 +215,7 @@ hr {
 
 .secondLink:hover {
   color: #fff;
-  border: solid 2px #fff;
+  border: solid 2px rgb(23, 222, 16);
   background: rgb(23, 172, 16);
 }
 
@@ -231,9 +234,10 @@ hr {
 .foot{
   text-decoration: none;
   list-style: none;
- display: inline-block;
- text-align: center;
-
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 3vh;
 }
 
 /* footer img {
