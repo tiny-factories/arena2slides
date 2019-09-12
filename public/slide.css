@@ -50,11 +50,13 @@ section {
 }
 
 .long{
-    font-size: 30px;
+    font-size: 25px !important;
+    line-height: 30px !important;
 }
 
 .short{
-    font-size: 60px;
+    font-size: 60px !important;
+    line-height: 60px !important;
 }
 
 #pagenum{
