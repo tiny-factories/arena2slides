@@ -21,7 +21,7 @@ section {
     height: 80vh;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 }
 
 #mainImage{
@@ -46,7 +46,7 @@ section {
 #pagenum{
     position: absolute;
     bottom:0px;
-    left: 0px; 
+    left: 0px;
 }
 
 /* Border around the body tag */
@@ -127,4 +127,5 @@ footer img{
 
 img:hover + .additional-info  {
     display: block;
+    z-index: 1;
 }
