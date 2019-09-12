@@ -4,8 +4,6 @@ html{
     color : white;
 }
 
-body{
-}
 
 section {
   position: fixed;
@@ -45,9 +43,31 @@ section {
 
 #pagenum{
     position: absolute;
-    bottom:0px;
-    left: 0px; 
+    top:0px;
+    right: 0px; 
 }
+
+.control_wrapper{
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+    display: flex;
+}
+
+.control_wrapper img{
+    width : 40px;
+    margin-right: 5px;
+}
+
+.next:hover{
+    opacity: 1;
+}
+
+.prev:hover{
+    opacity: 1;
+}
+
+
 
 /* Border around the body tag */
 #top, #bottom, #left, #right {
@@ -93,18 +113,6 @@ footer img{
 }
 
 
-.next:hover{
-    opacity: 1;
-}
-
-.prev:hover{
-    opacity: 1;
-}
-
-.random:hover{
-    opacity: 1;
-}
-
 
 /* information icon on the bottom right corner */
 #info-icon {
@@ -128,3 +136,15 @@ footer img{
 img:hover + .additional-info  {
     display: block;
 }
+
+.content-mobile h1 {display: block !important;}
+
+@media screen and (max-width: 800px) {
+    .content-mobile h1 {display: none !important;}
+
+
+    .control_wrapper img{
+        width : 100px;
+        margin-right: 5px;
+    }
+  }
