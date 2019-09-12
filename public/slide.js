@@ -62,7 +62,14 @@ fetch("/data/" + channel)
         console.log("Length of JSON file is : " + arenaJSON.length);
 
        for (var i = 0 ; i < arenaJSON.length ; i++){
-            arenaTitle.unshift(arenaJSON[i].title);
+
+            //If there is no title 
+            if (arenaJSON[i].title != null){
+                arenaTitle.unshift(arenaJSON[i].title);
+            } else {
+                arenaUrl.unshift("Untitled Page");
+            }
+
             arenaDescription.unshift(arenaJSON[i].description);
 
             //If there is no source.url section...
@@ -76,7 +83,7 @@ fetch("/data/" + channel)
             if (arenaJSON[i].image != null){
                 arenaImg.unshift(arenaJSON[i].image.display.url);
             } else {
-                arenaUrl.unshift("https://cdn.pixabay.com/photo/2018/04/20/17/18/cat-3336579__340.jpg");
+                arenaImg.unshift("https://d2w9rnfcy7mm78.cloudfront.net/1823396/original_a478a524577ed32227e7b36894cbb04a.png");
             }
         }
         console.log("JSON file is now loaded in array and ready!")
