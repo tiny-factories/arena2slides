@@ -18,9 +18,9 @@ function createGIF(content, element, index) {
   else {
     image.src = "/assets/white.jpg"
   }
-  // if (index < content.length) {
-  //   setTimeout(createGIF(content,element,index+1),1000);
-  // } 
+  if (index < content.length-1) {
+    setTimeout(createGIF(content,element,index+1),1000);
+  } 
   // else {
   //   setTimeout(createGIF(content,element,0),1000);
   // }
