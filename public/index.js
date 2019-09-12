@@ -3,18 +3,27 @@
 
 // use thumbnail
 function createGIF(content, element, index) {
+  console.log(content)
   let image = element.querySelector("img");
   if (content[index].image != undefined) {
 
     //Get the square version of the image
     image.src = content[index].image.square.url
-  } else if (content[index + 1].image != undefined) {
-    console.log("could not find inital image block, looking for next one..")
-    //If the initial block does not have image look for the next one.
-    image.src = content[index + 1].image.square.url
-  } else {
+  } 
+  // else if (content[index + 1].image != undefined) {
+  //   console.log("could not find inital image block, looking for next one..")
+  //   //If the initial block does not have image look for the next one.
+  //   image.src = content[index + 1].image.square.url
+  // } 
+  else {
     image.src = "/assets/white.jpg"
   }
+  // if (index < content.length) {
+  //   setTimeout(createGIF(content,element,index+1),1000);
+  // } 
+  // else {
+  //   setTimeout(createGIF(content,element,0),1000);
+  // }
 
   // NOTE: Alternative code. Attempting to use timeouts
   // to loop through and modify image shown.
