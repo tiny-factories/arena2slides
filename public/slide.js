@@ -25,7 +25,7 @@ const pagenumTag = document.getElementById("pagenum");
 
 const nextTag = document.querySelector("img.next");
 const prevTag = document.querySelector("img.prev");
-const randomTag = document.querySelector("img.random");
+//const randomTag = document.querySelector("img.random");
 
 const leftTag = document.querySelector('#left');
 const rightTag = document.querySelector('#right');
@@ -41,9 +41,11 @@ prevTag.addEventListener("click",function(){
     previous();
 });
 
+/*
 randomTag.addEventListener("click",function(){
     randomChange();
 });
+*/
 
 
 // Getting JSON Data----------
@@ -186,10 +188,12 @@ const previous = () => {
     updateSection();
 }
 
+/*
 const randomChange = () => {
     slideNumber = Math.floor(Math.random() * arenaJSON.length);
     updateSection();
 }
+*/
 
 
 //——————— Key Change Script —————————//
