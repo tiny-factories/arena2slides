@@ -138,14 +138,45 @@ img:hover + .additional-info  {
     z-index: 1;
 }
 
-.content-mobile h1 {display: block !important;}
+#mobileMessage  {
+    display: none !important;
+}
 
-@media screen and (max-width: 800px) {
-    .content-mobile h1 {display: none !important;}
+@media screen and (max-width: 700px) {
 
+    html{
+        background-color: black;
+        }
 
     .control_wrapper img{
-        width : 100px;
-        margin-right: 5px;
+        display: none !important;
     }
+
+    #mainTitle{
+        display: none !important;
+    }
+    
+    #mainDescription{
+        display: none !important;
+    }
+
+    #mainImage{
+        display: none !important;
+    }
+
+    #pagenum{
+        display: none !important;
+    }
+    
+    #mobileMessage  {
+        display: block !important;
+        font-size: 30px;
+        line-height: 40px;
+        padding: 30px;
+        color: white;
+        z-index: 20;
+    }
+
+ 
+
   }
