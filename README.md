@@ -2,7 +2,8 @@
 
 ![Arena GIF](arena.gif)
 
-
+Turn your arena channel into sleek slides!
+Visit the demo here : https://arena2slides.herokuapp.com/
 
 ## Roadmap:
 [ ] Change background based on picture background
